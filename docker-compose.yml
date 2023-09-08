@@ -10,3 +10,8 @@ services:
       - "5000:5000"
     volumes:
       - ./:/face_recognizer
+      - keras_cache:/root/.keras
+
+
+volumes:
+  keras_cache:
