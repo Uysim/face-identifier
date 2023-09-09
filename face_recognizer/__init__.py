@@ -1,1 +1,0 @@
-from face_recognizer.face_matching import is_faces_matched

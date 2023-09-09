@@ -1,15 +1,19 @@
 version: '3.1'
 services:
-  face_recognizer:
-    image: face_recognizer
-    container_name: face_recognizer
+  face_identifier:
+    # tty: true
+    # sdtin_open: true
+    image: face_identifier
+    container_name: face_identifier
     build:
       context: .
       dockerfile: Dockerfile
+    # command: python -m build
+    # command: python -m twine upload -u uysim -p PVYvtbK4Pem3zKudZirw dist/*
     ports:
       - "5000:5000"
     volumes:
-      - ./:/face_recognizer
+      - ./:/face_identifier
       - keras_cache:/root/.keras
 
 

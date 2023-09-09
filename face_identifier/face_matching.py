@@ -1,7 +1,7 @@
-from face_recognizer.face_detection import detect_face
-from face_recognizer.face_extraction import extract_image_box
-from face_recognizer.face_vector_embedding import predict_features
-from face_recognizer.face_comparation import is_features_matched
+from face_identifier.face_detection import detect_face
+from face_identifier.face_extraction import extract_image_box
+from face_identifier.face_vector_embedding import predict_features
+from face_identifier.face_comparation import is_features_matched
 import cv2
 
 def is_faces_matched(image1, image2):

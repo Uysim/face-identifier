@@ -1,6 +1,6 @@
 import unittest
 import cv2
-from face_recognizer import is_faces_matched
+from face_identifier import is_faces_matched
 
 class TestFaceMatching(unittest.TestCase):
     def test_same_faces_matching(self):
